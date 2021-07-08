@@ -1,0 +1,399 @@
+<app-header></app-header>
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">User Management</h4>
+    </div>
+    <div class="marginInner">
+        <div class="DashboardArea">
+            <div class="sideBtn DisFlex FixSearch">
+                <div class="form-group" style="position: relative;">
+                    <input type="text" class="form-control" style="padding-right: 30px;" placeholder="Search" name="" id="">
+                    <a href="javaScript:void(0)" class="SearchAbsolute"><img src="assets/imgs/search.svg" style="width: 16px;" alt="rotate-left" class="img-fluid"></a>
+                </div>
+                <h6>Filter : <a href="javaScript:void(0)"  id="Accept"><img src="assets/imgs/filter.svg" alt="filter" class="w25"></a></h6>
+            </div>
+
+            <div class="TableList">
+                <div class="dragscroll">
+                    <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>User Id</th>
+                                <th>Name</th>
+                                <th>Number</th>
+                                <th>Badge</th>
+                                <th>Age </th>
+                                <th>gender </th>
+                                <th>location </th>
+                                <th>Joining Date & Time </th>
+                                <th>Posts </th>
+                                <th>Earned </th>
+                                <th>Spent </th>
+                                <th>Status </th>
+                                <th>action </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>U-64</td>
+                                <td>VisHu</td>
+                                <td>9876543210</td>
+                                <td>Beginner</td>
+                                <td>15</td>
+                                <td>Male</td>
+                                <td>India</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>15</td>
+                                <td>₹115.00</td>
+                                <td>₹115.00</td>
+                                <td class="Green">Active</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/user-management-detail']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>U-64</td>
+                                <td>VisHu</td>
+                                <td>9876543210</td>
+                                <td>Beginner</td>
+                                <td>15</td>
+                                <td>Male</td>
+                                <td>India</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>15</td>
+                                <td>₹115.00</td>
+                                <td>₹115.00</td>
+                                <td class="Red">Inactive</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/user-management-detail']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>U-64</td>
+                                <td>VisHu</td>
+                                <td>9876543210</td>
+                                <td>Beginner</td>
+                                <td>15</td>
+                                <td>Male</td>
+                                <td>India</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>15</td>
+                                <td>₹115.00</td>
+                                <td>₹115.00</td>
+                                <td class="Green">Active</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/user-management-detail']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>U-64</td>
+                                <td>VisHu</td>
+                                <td>9876543210</td>
+                                <td>Beginner</td>
+                                <td>15</td>
+                                <td>Male</td>
+                                <td>India</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>15</td>
+                                <td>₹115.00</td>
+                                <td>₹115.00</td>
+                                <td class="Green">Active</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/user-management-detail']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>U-64</td>
+                                <td>VisHu</td>
+                                <td>9876543210</td>
+                                <td>Beginner</td>
+                                <td>15</td>
+                                <td>Male</td>
+                                <td>India</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>15</td>
+                                <td>₹115.00</td>
+                                <td>₹115.00</td>
+                                <td class="Red">Inactive</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/user-management-detail']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>U-64</td>
+                                <td>VisHu</td>
+                                <td>9876543210</td>
+                                <td>Beginner</td>
+                                <td>15</td>
+                                <td>Male</td>
+                                <td>India</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>15</td>
+                                <td>₹115.00</td>
+                                <td>₹115.00</td>
+                                <td class="Green">Active</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/user-management-detail']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>U-64</td>
+                                <td>VisHu</td>
+                                <td>9876543210</td>
+                                <td>Beginner</td>
+                                <td>15</td>
+                                <td>Male</td>
+                                <td>India</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>15</td>
+                                <td>₹115.00</td>
+                                <td>₹115.00</td>
+                                <td class="Green">Active</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/user-management-detail']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>U-64</td>
+                                <td>VisHu</td>
+                                <td>9876543210</td>
+                                <td>Beginner</td>
+                                <td>15</td>
+                                <td>Male</td>
+                                <td>India</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>15</td>
+                                <td>₹115.00</td>
+                                <td>₹115.00</td>
+                                <td class="Red">Inactive</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/user-management-detail']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>U-64</td>
+                                <td>VisHu</td>
+                                <td>9876543210</td>
+                                <td>Beginner</td>
+                                <td>15</td>
+                                <td>Male</td>
+                                <td>India</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>15</td>
+                                <td>₹115.00</td>
+                                <td>₹115.00</td>
+                                <td class="Green">Active</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/user-management-detail']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>U-64</td>
+                                <td>VisHu</td>
+                                <td>9876543210</td>
+                                <td>Beginner</td>
+                                <td>15</td>
+                                <td>Male</td>
+                                <td>India</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>15</td>
+                                <td>₹115.00</td>
+                                <td>₹115.00</td>
+                                <td class="Red">Inactive</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/user-management-detail']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+          
+            <div class="pagination">
+                <div class="record">
+                    <p>Total Records: <span class="orGread">10</span></p>
+                </div>
+                <div class="pagin">
+                    <ul>
+                        <li> <a href="javascript:void(0)"><img src="assets/imgs/double-left-arrows-symbol.svg" alt="arrow"></a>
+                        </li>
+                        <li><a href="javascript:void(0)"><img src="assets/imgs/left-arrow.svg" alt="arrow"></a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="active">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li><a href="javascript:void(0)">6</a></li>
+                        <li> <a href="javascript:void(0)"><img src="assets/imgs/right-arrow.svg" alt="arrow"></a></li>
+                        <li><a href="javascript:void(0)"><img src="assets/imgs/fast-forward-double-right-arrows-symbol.svg" alt="arrow"></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="shown">
+                    <h2>Show 
+                        <span>
+                            <select name="shown" id="shown">
+                                <option value="shown1">10</option>
+                                <option value="shown2">20</option>
+                                <option value="shown3">50</option>
+                                <option value="shown4">100</option>
+                            </select>
+                        </span>
+                        Entries
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="SidebarArea">
+    <div class="Sidebar" id="OrderStatus">
+        <span class="Closesidebar">
+            <img src="assets/imgs/close.svg" alt="close" class="img-fluid">
+            <h3 class="Title text-center">Filters</h3>
+        </span>
+        <hr>
+        <div class="SidebarBody">
+            <div class="ProfileArea">
+                <aside>
+                    <div class="ProfileHead profilePencil">
+                        <h3 class="normal">Alphabetically</h3>
+                    </div>
+                    <ul class="">
+                        <li class=" first">
+                            <div class="radio">
+                                <input id="radio-30" name="radio3" type="radio" checked>
+                                <label for="radio-30" class="radio-label">A to Z</label>
+                            </div>
+                        </li>
+                        <li class="second">
+                            <div class="radio">
+                                <input id="radio-40" name="radio3" type="radio">
+                                <label for="radio-40" class="radio-label">Z to A</label>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+                <aside>
+                    <div class="ProfileHead profilePencil">
+                        <h3 class="normal">Location</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="remember form-group">
+                                <div class="CheckBox homo2">
+                                    <input type="checkbox" id="check">
+                                    <span class="Check"><span class="rem">India­­</span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="remember form-group">
+                                <div class="CheckBox homo2">
+                                    <input type="checkbox" id="check">
+                                    <span class="Check"><span class="rem">China</span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="remember form-group">
+                                <div class="CheckBox homo2">
+                                    <input type="checkbox" id="check">
+                                    <span class="Check"><span class="rem">Nepal</span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="remember form-group">
+                                <div class="CheckBox homo2">
+                                    <input type="checkbox" id="check">
+                                    <span class="Check"><span class="rem">USA</span></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+                <aside>
+                    <div class="ProfileHead profilePencil">
+                        <h3 class="normal mb-3">Age (years)</h3>
+                    </div>
+                    <div class="sliderArea" style="background-color: #fff; padding: 12px 10px;">
+                        <ngx-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ngx-slider>
+                    </div>
+                </aside>
+                <aside>
+                    <div class="ProfileHead profilePencil">
+                        <h3 class="normal">Location</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="remember form-group">
+                                <div class="CheckBox homo2">
+                                    <input type="checkbox" id="check">
+                                    <span class="Check"><span class="rem">Male</span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="remember form-group">
+                                <div class="CheckBox homo2">
+                                    <input type="checkbox" id="check">
+                                    <span class="Check"><span class="rem">Female</span></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="remember form-group">
+                                <div class="CheckBox homo2">
+                                    <input type="checkbox" id="check">
+                                    <span class="Check"><span class="rem">Others</span></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+                <aside class="text-center">
+                    <a href="javaScript:void(0)" class="Button">Apply</a>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>

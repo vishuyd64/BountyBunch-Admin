@@ -1,0 +1,384 @@
+<app-header></app-header>
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">Post Management/Post Details</h4>
+    </div>
+    <div class="marginInner">
+        <div class="DashboardArea">
+
+            <div class="sideBtn DisFlex FixSearch">
+                <div>
+                    <h4 class="Title mt-">Post Details</h4> 
+                </div>
+                <div class="">
+                    <a href="javaScript:void(0)" class="Button-alt"  data-toggle="modal" data-target="#Block">Block</a>
+                    <a href="javaScript:void(0)" class="Button-del" data-toggle="modal" data-target="#Delete">Delete</a>
+                </div>
+            </div>
+
+            <div class="content-area">
+                <div class="inner-content ">
+                    <div class="DisFlex">
+                        <div class="postUpload">
+                            <h3 class="normal mb-2">Uploaded By</h3>
+                            <div class="postProfile ">
+                                <div class="postProfileImg">
+                                    <img src="assets/imgs/profile.jpg" class=" img-fluid" alt="">
+                                </div>
+                                <div class="postProfileText">
+                                    <h5>VisHu (User ID : UD-64)
+                                        <span>Noida, India</span>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="postuploadRight">
+                            <h3 class="normal mb-2 text-right">Uploaded By</h3>
+                            <div class="postProfileText">
+                                <h5>25-05-2021 & 13:37</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postDescription">
+                        <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum modi ab accusantium optio natus aliquid officia
+                            aspernatur ipsa, perferendis, accusamus, repudiandae tenetur fugiat non assumenda iste animi libero ipsam! Quos.</p>
+                    </div>
+                    <div class="postbg">
+                        <img src="assets/imgs/postbg.jpg" alt="postbg" class="img-fluid">
+                    </div>
+
+                    <div class="DisFlex mt-4">
+                        <div class="likepost DisFlex">
+                            <div class="likeComment">
+                                <img src="assets/imgs/like.svg" alt="like" class="img-fluid w25 mr-2">
+                                <span>222</span>
+                            </div>
+                            <div class="likeComment">
+                                <img src="assets/imgs/dislike.svg" alt="like" class="img-fluid w25 mr-2">
+                                <span>22</span>
+                            </div>
+                            <div class="likeComment">
+                                <img src="assets/imgs/comment.svg" alt="like" class="img-fluid w25 mr-2">
+                                <span>32</span>
+                            </div>
+                        </div>
+                        <div class="postpublic">
+                            <h3 class="normal"><b>Post Type  - </b> <i>Public</i></h3>
+                        </div>
+                    </div>
+
+                    <div class="Tabcontainer">
+                        <div class="booking-tabs tabFlex">
+                            <ul class="nav nav-tabs" style="display: flex;justify-content: flex-end;">
+                                <li class="active"><a data-toggle="tab" class="active" href="#Likes">Likes</a></li>
+                                <li><a data-toggle="tab" href="#Dislikes">Dislikes</a></li>
+                                <li><a data-toggle="tab" href="#Comments">Comments</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div id="Likes" class="tab-pane fade in active show">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="TableList">
+                                            <div class="dragscroll">
+                                                <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>S.No</th>
+                                                            <th>User</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div id="Dislikes" class="tab-pane ">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="TableList">
+                                            <div class="dragscroll">
+                                                <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>S.No</th>
+                                                            <th>User</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>
+                                                                <a href="javaScript:void(0)"><img src="assets/imgs/profile.jpg" class="w25" alt=""> VisHu</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Comments" class="tab-pane ">
+                                <div class="commentAll">
+                                    <div class="commentTab">
+                                        <div class="DisFlex mt-3">
+                                            <div class="postUpload">
+                                                <div class="postProfile ">
+                                                    <div class="postProfileImg">
+                                                        <img src="assets/imgs/profile.jpg" class=" img-fluid" alt="">
+                                                    </div>
+                                                    <div class="postProfileText">
+                                                        <h5>VisHu
+                                                            <span>9876543210</span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="postuploadRight">
+                                                <div class="postProfileText">
+                                                    <h5>25-05-2021 & 13:37</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-11">
+                                                <div class="postDescription">
+                                                    <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum modi ab accusantium optio natus aliquid officia
+                                                        aspernatur ipsa, perferendis, accusamus, repudiandae tenetur fugiat non assumenda iste animi libero ipsam! Quos.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <label class="switch ">
+                                                    <input type="checkbox">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="commentTab">
+                                        <div class="DisFlex mt-3">
+                                            <div class="postUpload">
+                                                <div class="postProfile ">
+                                                    <div class="postProfileImg">
+                                                        <img src="assets/imgs/profile.jpg" class=" img-fluid" alt="">
+                                                    </div>
+                                                    <div class="postProfileText">
+                                                        <h5>VisHu
+                                                            <span>9876543210</span>
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="postuploadRight">
+                                                <div class="postProfileText">
+                                                    <h5>25-05-2021 & 13:37</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-11">
+                                                <div class="postDescription">
+                                                    <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum modi ab accusantium optio natus aliquid officia
+                                                        aspernatur ipsa, perferendis, accusamus, repudiandae tenetur fugiat non assumenda iste animi libero ipsam! Quos.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <label class="switch ">
+                                                    <input type="checkbox">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="Postreply">
+                                            <p><b>Reply <span class="round"></span></b> 21 Replies</p>
+                                            <a href="javaScript:void(0)" class="pt-2">Show Previous Replies</a>
+                                        </div>
+                                        <div class="postRply pt-4">
+                                            <div class="row">
+                                                <div class="col-md-1"></div>
+                                                <div class="col-md-10 postRplyCOl">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="postUpload">
+                                                                <div class="postProfile ">
+                                                                    <div class="postProfileImg">
+                                                                        <img src="assets/imgs/profile.jpg" class=" img-fluid" alt="">
+                                                                    </div>
+                                                                    <div class="postProfileText">
+                                                                        <h5>VisHu
+                                                                            <span>9876543210</span>
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-9">
+                                                            <div class="postDescription">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum modi ab accusantium optio natus aliquid officia
+                                                                    aspernatur ipsa, perferendis, accusamus, repudiandae tenetur fugiat non assumenda iste animi libero ipsam! Quos.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <label class="switch ">
+                                                        <input type="checkbox">
+                                                        <span class="slider"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+        </div>
+    </div>
+</div>
+
+
+
+<div class="ModalBlock ModalBox">
+    <div id="Block" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Decline FormModal">
+                        <a href="JavaScript:Void(0);" class="CloseModal" data-dismiss="modal"><img src="assets/imgs/remove.svg" alt=""></a>
+                        <h3>Block</h3>
+                        <div class=" warning">
+                            <img src="assets/imgs/block.svg" alt="" class="img-fluid">
+                        </div>
+                        <h6 class="pb-3 text-center">Do you really want to Block?</h6>
+                        <h4 class="mb-3 mt-3 text-center">
+                            <a href="JavaScript:Void(0);" class="Button btnGreen" data-dismiss="modal">Confirm</a>
+                            <a href="JavaScript:Void(0);" class="Button-del ml-2" data-dismiss="modal">Decline</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Delete" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Decline FormModal">
+                        <a href="JavaScript:Void(0);" class="CloseModal" data-dismiss="modal"><img src="assets/imgs/remove.svg" alt=""></a>
+                        <h3>Delete Post Details</h3>
+                        <div class=" warning">
+                            <img src="assets/imgs/warning.svg" alt="" class="img-fluid">
+                        </div>
+                        <h6 class="pb-3 text-center">Do you really want to delete Post Details?</h6>
+                        <h4 class="mb-3 mt-3 text-center">
+                            <a href="JavaScript:Void(0);" class="Button btnGreen" data-dismiss="modal">Confirm</a>
+                            <a href="JavaScript:Void(0);" class="Button-del ml-2" data-dismiss="modal">Decline</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

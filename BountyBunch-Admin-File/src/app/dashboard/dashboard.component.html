@@ -1,0 +1,202 @@
+<app-header></app-header>
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">Dashboard</h4>
+    </div>
+    <div class="marginInner">
+        <div class="DashboardArea">
+
+            <h4 class="Title mt-3">Filter</h4> 
+
+            <div class="FilterArea FilterWidthAuto jcsb"> 
+                    
+                <div class="form-group">  
+                    <label>From</label>
+                    <input type="date" class="form-control">
+                </div>
+                
+                <div class="form-group">  
+                    <label>To</label>
+                    <input type="date" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label>&nbsp;</label>
+                    <button class="Button">Apply</button>
+                </div> 
+                <div class="form-group">
+                    <label>&nbsp;</label>
+                    <h4>OR</h4>
+                </div> 
+                <div class="form-group">
+                    <label>&nbsp;</label>
+                    <ul class="DisFlex today">
+                        <li><a href="javaScript:void(0)" class="active">Today</a></li>
+                        <li><a href="javaScript:void(0)">This Week</a></li>
+                        <li><a href="javaScript:void(0)">This Month</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4 class="Title mt-5">System Overview</h4> 
+            <div class="row mt-3">
+                <div class="col-sm-4">
+                    <a [routerLink]="['/order-today']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/imgs/group.svg" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">Registered Users</h2>
+									<h4>1251 </h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>
+                <div class="col-sm-4">
+                    <a [routerLink]="['/cancelled-order']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/imgs/quiz-on-computer-with-question-signs-around.svg" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">Live Quizs</h2>
+									<h4>234 </h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>  
+                <div class="col-sm-4">
+                    <a [routerLink]="['/ofline-restaurant']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/imgs/agenda.svg" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">Quiz Tournaments</h2>
+									<h4>122</h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>   
+                <div class="col-sm-4">
+                    <a [routerLink]="['/active-brand']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/imgs/post.svg" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">Total Posts</h2>
+									<h4>222</h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>   
+                <div class="col-sm-4">
+                    <a [routerLink]="['/active-store']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/imgs/growth.svg" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">Total Revenue</h2>
+									<h4>$24,934.00</h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>   
+                <div class="col-sm-4">
+                    <a [routerLink]="['/active-driver']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/imgs/user-avatar-with-check-mark.svg" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">Sub-admin</h2>
+									<h4>12</h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>    
+                <div class="col-sm-4">
+                    <a [routerLink]="['/active-driver']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/imgs/gamepad.svg" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">Total Games</h2>
+									<h4>1122</h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div>   
+                <div class="col-sm-4">
+                    <a [routerLink]="['/active-driver']">
+						<aside>
+							<div class="row align-items-center">
+								<div class="col-md-3">
+									<span class="userDash"><img src="assets/imgs/gamepad-and-headphones.svg" alt="user" class="img-fluid"></span>
+								</div>
+								<div class="col-md-9">
+									<h2 class="count">Total Active Players</h2>
+									<h4>2312</h4>
+								</div>
+							</div>
+						</aside>
+					</a>
+                </div> 
+            </div>
+
+            <h4 class="Title mt-5">Performance</h4> 
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="chartleft">
+                        <div id="chart">
+                            <apx-chart
+                              [series]="chartOptions.series"
+                              [chart]="chartOptions.chart"
+                              [dataLabels]="chartOptions.dataLabels"
+                              [plotOptions]="chartOptions.plotOptions"
+                              [yaxis]="chartOptions.yaxis"
+                              [xaxis]="chartOptions.xaxis"
+                              [fill]="chartOptions.fill"
+                              [title]="chartOptions.title"
+                            ></apx-chart>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="chartleft">
+                        <div id="chart2">
+                            <apx-chart
+                              [series]="chartOptions1.series"
+                              [chart]="chartOptions1.chart"
+                              [labels]="chartOptions1.labels"
+                              [title]="chartOptions1.title"
+                              [theme]="chartOptions1.theme"
+                              [responsive]="chartOptions1.responsive"
+                            ></apx-chart>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

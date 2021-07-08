@@ -1,0 +1,266 @@
+<app-header></app-header>
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">Inquiry Management</h4>
+    </div>
+    <div class="marginInner">
+        <div class="DashboardArea">
+
+            <div class="sideBtn DisFlex FixSearch mt-4 jcsi">
+                <div class="form-group" style="position: relative;">
+                    <input type="text" class="form-control" style="padding-right: 30px;" placeholder="Search" name="" id="">
+                    <a href="javaScript:void(0)" class="SearchAbsolute"><img src="assets/imgs/search.svg" style="width: 16px;" alt="rotate-left" class="img-fluid"></a>
+                </div>
+                <div class="DisFlex">
+                    <p style=" width: 210px; margin-right: 20px;"><b>Sort by : </b></p>
+                    <select class="form-control">
+                        <option>All</option>
+                        <option>By Date</option>
+                        <option>Name</option>
+                        <option>By Status</option>
+                        <option>inquiry Type</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="TableList">
+                <div class="dragscroll">
+                    <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>User ID</th>
+                                <th>Username</th>
+                                <th>Requested on</th>
+                                <th>inquiry type </th>
+                                <th>Status </th>
+                                <th>action </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="javaScript:void(0)">U-64</a></td>
+                                <td>VisHu</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>Payment Failed</td>
+                                <td class="Green">Open</td>
+                                <td class="ActionImg">
+                                    <a href="javaScript:void(0)"  data-toggle="modal" data-target="#View">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                    <a href="javaScript:void(0)" >
+                                        <img src="assets/imgs/mail.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="javaScript:void(0)">U-64</a></td>
+                                <td>VisHu</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>System Error</td>
+                                <td class="Red">Closed</td>
+                                <td class="ActionImg">
+                                    <a href="javaScript:void(0)"  data-toggle="modal" data-target="#View">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="javaScript:void(0)">U-64</a></td>
+                                <td>VisHu</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>Payment Failed</td>
+                                <td class="Green">Open</td>
+                                <td class="ActionImg">
+                                    <a href="javaScript:void(0)"  data-toggle="modal" data-target="#View">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><a href="javaScript:void(0)">U-64</a></td>
+                                <td>VisHu</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>Payment Failed</td>
+                                <td class="Green">Open</td>
+                                <td class="ActionImg">
+                                    <a href="javaScript:void(0)"  data-toggle="modal" data-target="#View">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><a href="javaScript:void(0)">U-64</a></td>
+                                <td>VisHu</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>Payment Failed</td>
+                                <td class="Green">Open</td>
+                                <td class="ActionImg">
+                                    <a href="javaScript:void(0)"  data-toggle="modal" data-target="#View">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                 <td><a href="javaScript:void(0)">U-64</a></td>
+                                <td>VisHu</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>Payment Failed</td>
+                                <td class="Green">Open</td>
+                                <td class="ActionImg">
+                                    <a href="javaScript:void(0)"  data-toggle="modal" data-target="#View">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                 <td><a href="javaScript:void(0)">U-64</a></td>
+                                <td>VisHu</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>Payment Failed</td>
+                                <td class="Green">Open</td>
+                                <td class="ActionImg">
+                                    <a href="javaScript:void(0)"  data-toggle="modal" data-target="#View">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                 <td><a href="javaScript:void(0)">U-64</a></td>
+                                <td>VisHu</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>Payment Failed</td>
+                                <td class="Green">Open</td>
+                                <td class="ActionImg">
+                                    <a href="javaScript:void(0)"  data-toggle="modal" data-target="#View">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                 <td><a href="javaScript:void(0)">U-64</a></td>
+                                <td>VisHu</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>Payment Failed</td>
+                                <td class="Green">Open</td>
+                                <td class="ActionImg">
+                                    <a href="javaScript:void(0)"  data-toggle="modal" data-target="#View">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                 <td><a href="javaScript:void(0)">U-64</a></td>
+                                <td>VisHu</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td>Payment Failed</td>
+                                <td class="Green">Open</td>
+                                <td class="ActionImg">
+                                    <a href="javaScript:void(0)"  data-toggle="modal" data-target="#View">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="record">
+                    <p>Total Records: <span class="orGread">10</span></p>
+                </div>
+                <div class="pagin">
+                    <ul>
+                        <li> <a href="javascript:void(0)"><img src="assets/imgs/double-left-arrows-symbol.svg" alt="arrow"></a>
+                        </li>
+                        <li><a href="javascript:void(0)"><img src="assets/imgs/left-arrow.svg" alt="arrow"></a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="active">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li><a href="javascript:void(0)">6</a></li>
+                        <li> <a href="javascript:void(0)"><img src="assets/imgs/right-arrow.svg" alt="arrow"></a></li>
+                        <li><a href="javascript:void(0)"><img src="assets/imgs/fast-forward-double-right-arrows-symbol.svg" alt="arrow"></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="shown">
+                    <h2>Show 
+                        <span>
+                            <select name="shown" id="shown">
+                                <option value="shown1">10</option>
+                                <option value="shown2">20</option>
+                                <option value="shown3">50</option>
+                                <option value="shown4">100</option>
+                            </select>
+                        </span>
+                        Entries
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="ModalBlock ModalBox">
+    <div id="View" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="max-width: 700px;">
+            <div class="modal-content">
+                <div class="modal-body" style="    padding: 1rem 2rem 2rem;">
+                    <div class="Decline FormModal">
+                        <a href="JavaScript:Void(0);" class="CloseModal" data-dismiss="modal"><img src="assets/imgs/remove.svg" alt=""></a>
+                        <h3>View Inquiry Details</h3>
+                        <div class="order-view mt30 max-WT-700 mrgn-0-auto">
+                            <div class="main-block-innner mb40 mt40">
+                                <div class="add-store-block input-style">
+                                    <div class="form-group row">
+                                        <strong class="col-md-4">User Id	 :</strong>
+                                        <div class="col-md-8"><label>U-64</label></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <strong class="col-md-4"> Username	 :</strong>
+                                        <div class="col-md-8"><label>Mr. VisHu</label></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <strong class="col-md-4">Contact Number	 :</strong>
+                                        <div class="col-md-8"><label>+91 9876543210</label></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <strong class="col-md-4">Inquiry Type :</strong>
+                                        <div class="col-md-8"><label>Payment Failed	</label></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <strong class="col-md-4">Request Status :</strong>
+                                        <div class="col-md-8"><label>Closed</label></div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <strong class="col-md-4">Description :</strong>
+                                        <div class="col-md-8"><label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit</label></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="mb-3 mt-3 text-center">
+                            <a href="JavaScript:Void(0);" class="Button-alt" data-dismiss="modal">Email</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

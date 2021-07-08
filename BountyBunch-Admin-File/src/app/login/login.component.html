@@ -1,0 +1,22 @@
+<div class="LoginArea bgArea">
+    <div class="LoginBox">
+            <div class="logoMainImg">
+                <img src="assets/imgs/logo.png" alt="">
+            </div>
+        <h5>Welcome to the Bountybunch </h5>
+        <form class="formPadding">
+            <div class="form-group">
+                <input type="email" placeholder=" E-mail " class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="password" placeholder=" Password" class="form-control">
+                <a href="javaScript:void(0)" class="IconEye"><i class="fa fa-eye" aria-hidden="true"></i></a>
+            </div>
+            <button type="button"  [routerLink]="['/dashboard']" class="Login">LOGIN</button>
+            <div class="Checkboxs">
+                <a  [routerLink]="['/forgot']">Forgot password?</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,185 @@
+
+
+<div class="SidenavBar">
+    
+    <ul>
+        <div class="Logo DisFlex">
+           <a [routerLink]="['/dashboard']"><img src="assets/imgs/logo-title.png"></a>
+        </div>
+        <div class="sidenavTop">
+            <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                <a [routerLink]="['/dashboard']">
+                    <span><i class="faImg"><img src="assets/imgs/dashboard.svg" alt="dashboard" class="img-fluid"></i></span>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+
+             
+ 
+            
+    
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/sub-admin']">
+                    <span><i class="faImg"><img src="assets/imgs/user-avatar-with-check-mark.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Sub-Admin Management</p>
+                </a>
+            </li>
+    
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/user-management']">
+                    <span><i class="faImg"><img src="assets/imgs/user.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>User  Management</p>
+                </a>
+            </li>
+    
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/post-management']">
+                    <span><i class="faImg"><img src="assets/imgs/closed-mail-envelope.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Post Management</p>
+                </a>
+            </li>
+    
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/offer-management']">
+                    <span><i class="faImg"><img src="assets/imgs/discount.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Offer Management</p>
+                </a>
+            </li>
+    
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/bliss-bundle']">
+                    <span><i class="faImg"><img src="assets/imgs/stack.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Bliss Bundle Package </p>
+                </a>
+            </li>
+    
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/report']">
+                    <span><i class="faImg"><img src="assets/imgs/profit-report.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Reports Management</p>
+                </a>
+            </li>
+    
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/hourly-bonus']">
+                    <span><i class="faImg"><img src="assets/imgs/bonus.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Hourly Bonus Management</p>
+                </a>
+            </li>
+    
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/promo-management']">
+                    <span><i class="faImg"><img src="assets/imgs/ad.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Advertisement Management</p>
+                </a>
+            </li>
+    
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/notification']">
+                    <span><i class="faImg"><img src="assets/imgs/smartphone.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Quiz Management</p>
+                </a>
+            </li>
+    
+            <li [routerLinkActive]="['active']">
+                <a href="javaScript:void(0)">
+                    <span><i class="faImg"><img src="assets/imgs/winner-champion-trophy.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Tournament Management</p>
+                </a>
+            </li>
+    
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/finance']">
+                    <span><i class="faImg"><img src="assets/imgs/money-bag.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Finance Management</p>
+                </a>
+            </li>
+
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/inquiry']">
+                    <span><i class="faImg"><img src="assets/imgs/inquiry.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Inquiry Management</p>
+                </a>
+            </li>
+
+            <li class="dropdown" [routerLinkActive]="['active']">
+                <a href="#" id="navbardrop" data-toggle="dropdown">
+                    <span><i class="faImg"><img src="assets/imgs/settings.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Settings Management</p>
+                </a>
+                <div class="dropdown-menu">
+                    <li [routerLinkActive]="['active']">
+                        <a [routerLink]="['/category-management']">
+                            <p>Category Management</p>
+                        </a>
+                    </li>
+                    
+                    <li [routerLinkActive]="['active']">
+                        <a [routerLink]="['/faq-management']">
+                            <p>FAQs Management</p>
+                        </a>
+                    </li>
+                    
+                    <li [routerLinkActive]="['active']">
+                        <a [routerLink]="['/notification-management']">
+                            <p>Notification Management</p>
+                        </a>
+                    </li>
+                    
+                    <li [routerLinkActive]="['active']">
+                        <a [routerLink]="['/static-content-management']">
+                            <p>Static content Management</p>
+                        </a>
+                    </li>
+                </div>
+            </li> 
+    
+            <!-- <li class="dropdown" [routerLinkActive]="['active']">
+                <a href="javaScript:void(0)" id="navbardrop">
+                    <span><i class="faImg"><img src="assets/imgs/settings.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Settings Management</p>
+                </a>
+            </li>
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/category-management']">
+                    <span><i class="faImg"><img src="assets/imgs/settings.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Category Management</p>
+                </a>
+            </li>
+            
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/faq-management']">
+                    <span><i class="faImg"><img src="assets/imgs/settings.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>FAQs Management</p>
+                </a>
+            </li>
+            
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/notification-management']">
+                    <span><i class="faImg"><img src="assets/imgs/settings.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Notification Management</p>
+                </a>
+            </li>
+            
+            <li [routerLinkActive]="['active']">
+                <a [routerLink]="['/static-content-management']">
+                    <span><i class="faImg"><img src="assets/imgs/settings.svg" alt="paid" class="img-fluid"></i></span> 
+                    <p>Static content Management</p>
+                </a>
+            </li> -->
+    
+<!-- <li class="dropdown" [routerLinkActive]="['active']">
+    <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        <span class="Icon"><img src="assets/images/Sidenav-3.svg"></span>
+        Appointments
+    </a>
+    <div class="dropdown-menu">
+    <li [routerLinkActive]="['active']"><a [routerLink]="['/appointment-upcoming']">Upcoming Appointments</a></li>
+    <li [routerLinkActive]="['active']"><a [routerLink]="['/appointment-past']">Past Appointments</a> </li>
+</div>
+</li> -->
+
+
+        </div>
+    </ul>
+</div>

@@ -1,0 +1,327 @@
+<app-header></app-header>
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">Hourly Bonus Management</h4>
+    </div>
+    <div class="marginInner">
+        <div class="DashboardArea">
+
+            <div class="sideBtn DisFlex FixSearch">
+                <div class="form-group" style="position: relative;">
+                    <input type="text" class="form-control" style="padding-right: 30px;" placeholder="Search" name="" id="">
+                    <a href="javaScript:void(0)" class="SearchAbsolute"><img src="assets/imgs/search.svg" style="width: 16px;" alt="rotate-left" class="img-fluid"></a>
+                </div>
+                <a href="javaScript:void(0)" data-toggle="modal" data-target="#Add" class="Button" >Add New</a>
+            </div>
+
+            <div class="TableList">
+                <div class="dragscroll">
+                    <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Bonus ID</th>
+                                <th> Title</th>
+                                <th>Description</th>
+                                <th>Type</th>
+                                <th>Uploaded  On </th>
+                                <th>Status </th>
+                                <th>Action </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="javaScript:void(0)">B-64</a></td>
+                                <td>Add 100 Chips</td>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>Real Money</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td class="Green">Active</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/edit-hourly-bonus']">
+                                        <img src="assets/imgs/edit.svg" alt="">
+                                    </a>
+                                    <a [routerLink]="['/view-hourly-bonus']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                    <label class="switch ">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="javaScript:void(0)">B-64</a></td>
+                                <td>Add 100 Chips</td>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>Real Money</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td class="Red">Inactive</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/edit-hourly-bonus']">
+                                        <img src="assets/imgs/edit.svg" alt="">
+                                    </a>
+                                    <a [routerLink]="['/view-hourly-bonus']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                    <label class="switch ">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="javaScript:void(0)">B-64</a></td>
+                                <td>Add 100 Chips</td>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>Real Money</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td class="Green">Active</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/edit-hourly-bonus']">
+                                        <img src="assets/imgs/edit.svg" alt="">
+                                    </a>
+                                    <a [routerLink]="['/view-hourly-bonus']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                    <label class="switch ">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><a href="javaScript:void(0)">B-64</a></td>
+                                <td>Add 100 Chips</td>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>Real Money</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td class="Green">Active</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/edit-hourly-bonus']">
+                                        <img src="assets/imgs/edit.svg" alt="">
+                                    </a>
+                                    <a [routerLink]="['/view-hourly-bonus']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                    <label class="switch ">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><a href="javaScript:void(0)">B-64</a></td>
+                                <td>Add 100 Chips</td>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>Real Money</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td class="Green">Active</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/edit-hourly-bonus']">
+                                        <img src="assets/imgs/edit.svg" alt="">
+                                    </a>
+                                    <a [routerLink]="['/view-hourly-bonus']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                    <label class="switch ">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><a href="javaScript:void(0)">B-64</a></td>
+                                <td>Add 100 Chips</td>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>Real Money</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td class="Green">Active</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/edit-hourly-bonus']">
+                                        <img src="assets/imgs/edit.svg" alt="">
+                                    </a>
+                                    <a [routerLink]="['/view-hourly-bonus']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                    <label class="switch ">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><a href="javaScript:void(0)">B-64</a></td>
+                                <td>Add 100 Chips</td>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>Real Money</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td class="Red">Inactive</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/edit-hourly-bonus']">
+                                        <img src="assets/imgs/edit.svg" alt="">
+                                    </a>
+                                    <a [routerLink]="['/view-hourly-bonus']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                    <label class="switch ">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><a href="javaScript:void(0)">B-64</a></td>
+                                <td>Add 100 Chips</td>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>Real Money</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td class="Green">Active</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/edit-hourly-bonus']">
+                                        <img src="assets/imgs/edit.svg" alt="">
+                                    </a>
+                                    <a [routerLink]="['/view-hourly-bonus']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                    <label class="switch ">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><a href="javaScript:void(0)">B-64</a></td>
+                                <td>Add 100 Chips</td>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>Real Money</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td class="Green">Active</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/edit-hourly-bonus']">
+                                        <img src="assets/imgs/edit.svg" alt="">
+                                    </a>
+                                    <a [routerLink]="['/view-hourly-bonus']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                    <label class="switch ">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><a href="javaScript:void(0)">B-64</a></td>
+                                <td>Add 100 Chips</td>
+                                <td>Lorem ipsum dolor sit amet</td>
+                                <td>Real Money</td>
+                                <td>24-05-2021 <br> 11:12:12</td>
+                                <td class="Red">Inactive</td>
+                                <td class="ActionImg">
+                                    <a [routerLink]="['/edit-hourly-bonus']">
+                                        <img src="assets/imgs/edit.svg" alt="">
+                                    </a>
+                                    <a [routerLink]="['/view-hourly-bonus']">
+                                        <img src="assets/imgs/eye.svg" alt="">
+                                    </a>
+                                    <label class="switch ">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="record">
+                    <p>Total Records: <span class="orGread">10</span></p>
+                </div>
+                <div class="pagin">
+                    <ul>
+                        <li> <a href="javascript:void(0)"><img src="assets/imgs/double-left-arrows-symbol.svg" alt="arrow"></a>
+                        </li>
+                        <li><a href="javascript:void(0)"><img src="assets/imgs/left-arrow.svg" alt="arrow"></a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="active">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li><a href="javascript:void(0)">6</a></li>
+                        <li> <a href="javascript:void(0)"><img src="assets/imgs/right-arrow.svg" alt="arrow"></a></li>
+                        <li><a href="javascript:void(0)"><img src="assets/imgs/fast-forward-double-right-arrows-symbol.svg" alt="arrow"></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="shown">
+                    <h2>Show 
+                        <span>
+                            <select name="shown" id="shown">
+                                <option value="shown1">10</option>
+                                <option value="shown2">20</option>
+                                <option value="shown3">50</option>
+                                <option value="shown4">100</option>
+                            </select>
+                        </span>
+                        Entries
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="ModalBlock ModalBox">
+    <div id="Add" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Decline pl-3 pr-3">
+                        <a href="JavaScript:Void(0);" class="CloseModal" data-dismiss="modal"><img src="assets/imgs/remove.svg" alt=""></a>
+                        <h3>Add Hourly Bonus</h3>
+                        <form class="formPadding">
+                            <div class="form-group">  
+                                <label>Enter Bonus Title</label>
+                                <input type="text" class="form-control" placeholder="Enter Bonus Title">
+                            </div>
+                            <div class="form-group">  
+                                <label>Select Type</label>
+                                <select class="form-control">
+                                    <option>Select Type</option>
+                                    <option>Real Money	</option>
+                                    <option>Chips Bonus </option>
+                                    <option>Bliss Bundle</option>
+                                    <option>Cahsback</option>
+                                </select>
+                            </div>
+                            <div class="form-group"> 
+                                <label>Select Type</label>
+                                <textarea name="" class="form-control"  id="" cols="30" rows="5"></textarea>
+                            </div>
+                        </form>
+                        <h4 class="mb-3 text-center">
+                            <a href="JavaScript:Void(0);" class="Button-alt" data-dismiss="modal">Upload New Bonus</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

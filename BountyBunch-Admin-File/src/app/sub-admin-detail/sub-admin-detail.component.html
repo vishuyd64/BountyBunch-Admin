@@ -1,0 +1,157 @@
+<app-header></app-header>
+<app-sidenav></app-sidenav>
+<div class="MainMargin">
+    <div class="mainHead">
+        <h4 class="Title">Sub-admin Management/View Sub-admin</h4>
+    </div>
+    <div class="marginInner">
+        <div class="DashboardArea">
+
+            <div class="sideBtn DisFlex FixSearch">
+                <div>
+                    <h4 class="Title">Sub-admin Details</h4> 
+                </div>
+                <div class="">
+                    <a href="javaScript:void(0)" class="Button-alt"  data-toggle="modal" data-target="#changePassword">Change Password</a>
+                    <a [routerLink]="['/edit-sub-admin-detail']" class="Button-alt" >Edit</a>
+                    <a href="javaScript:void(0)" class="Button-del" data-toggle="modal" data-target="#Delete">Delete</a>
+                </div>
+            </div>
+
+            <div class="content-area">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">  
+                                        <label>Name</label>
+                                        <input type="text" disabled value="VisHu" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">  
+                                        <label>Email ID</label>
+                                        <input type="text" disabled value="vishu@gmail.com" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">  
+                                        <label>Created On</label>
+                                        <input type="text" disabled value="24-05-2021 & 11:12:12" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">  
+                                        <label>Modified On</label>
+                                        <input type="text" disabled value="24-05-2021 & 11:12:12" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pr-4 text-right">
+                            <h6 class="pb-3">Status : <span class="Green">Active</span></h6>
+                            <span class="pr-2">Active</span> 
+                            <label class="switch ">
+                                Inactive
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <h4 class="Title pb-3 pt-5">Assigned Permission</h4>
+                    <div class="TableList">
+                        <div class="dragscroll">
+                            <table id="example" class="table table-bordered " cellpadding="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th style="    background-color: #fff4e1;">S.No</th>
+                                        <th style="    background-color: #fff4e1;">Module </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>User Management (UM)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Post  Management (PM)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sub-admin Management (SbM)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Inquiry  Management (IM)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Offer   Management (OM)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+        </div>
+    </div>
+</div>
+
+
+
+<div class="ModalBlock ModalBox">
+    <div id="changePassword" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Decline FormModal">
+                        <a href="JavaScript:Void(0);" class="CloseModal" data-dismiss="modal"><img src="assets/imgs/remove.svg" alt=""></a>
+                        <h3>Reset Password</h3>
+                        <form class="formPadding">
+                            <div class="form-group">  
+                                <label>Enter New Password</label>
+                                <input type="password" class="form-control">
+                                <a href="javaScript:void(0)" class="IconEye"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="form-group">  
+                                <label>Confirm Password</label>
+                                <input type="password" class="form-control">
+                                <a href="javaScript:void(0)" class="IconEye"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                            </div>
+                        </form>
+                        <h4 class="mb-3 text-center">
+                            <a href="JavaScript:Void(0);" class="Button-alt" data-dismiss="modal">Reset Password</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Delete" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="Decline FormModal">
+                        <a href="JavaScript:Void(0);" class="CloseModal" data-dismiss="modal"><img src="assets/imgs/remove.svg" alt=""></a>
+                        <h3>Delete Sub-Admin</h3>
+                        <div class=" warning">
+                            <img src="assets/imgs/warning.svg" alt="" class="img-fluid">
+                        </div>
+                        <h6 class="pb-3 text-center">Do you really want to delete sub-admin?</h6>
+                        <h4 class="mb-3 mt-3 text-center">
+                            <a href="JavaScript:Void(0);" class="Button btnGreen" data-dismiss="modal">Confirm</a>
+                            <a href="JavaScript:Void(0);" class="Button-del ml-2" data-dismiss="modal">Decline</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
